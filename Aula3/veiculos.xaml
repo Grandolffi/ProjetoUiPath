@@ -134,8 +134,10 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1122,2856" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1122,4622" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="escolhaEstado" />
+      <Variable x:TypeArguments="x:String" Name="buscaUserCar" />
       <Variable x:TypeArguments="s:String[]" Name="valoresLimpo" />
       <Variable x:TypeArguments="x:Int32" Name="indiceBMW" />
       <Variable x:TypeArguments="scg:List(sd:DataRow)" Default="[New List(Of DataRow )]" Name="linhaRemover" />
@@ -156,31 +158,31 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="572,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="552,1103" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="552,1099" sap2010:WorkflowViewState.IdRef="Sequence_12">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap:VirtualizedContainerService.HintSize="518,1043" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence sap:VirtualizedContainerService.HintSize="518,1039" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Nova guia" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,960" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="663815c5-4690-483c-9670-266824712bb3" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Nova guia" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,956" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="663815c5-4690-483c-9670-266824712bb3" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,719" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,716" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'grouping'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="663815c5-4690-483c-9670-266824712bb3" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'grouping'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="663815c5-4690-483c-9670-266824712bb3" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="newtab" CVScreenId="4729464b-d0e5-4c34-87d6-53b1337f6cc4" ContentHash="U9ZOiS3KhESSYlTYNfzw0A" CvElementArea="117, 52, 1672, 37" CvType="InputBox" DesignTimeRectangle="165, 59, 1581, 24" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Nova guia - Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de endereço e de pesquisa' role='editable text' /&gt;" Guid="834bd96d-2389-4842-bff3-43cf6492f1e5" InformativeScreenshot="40a55d53be6cd0d87026436bec742df4.png" Reference="FOw96i4iR0u0tJaKUAWT7Q/j8ik-Dl0Jk-HPv_LFneGpw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Nova guia - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -201,7 +203,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'push button  Voltar'" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="https://www.webmotors.com.br/carros/estoque/bmw/m3?lkid=1022&amp;utm_id=21820960772&amp;utm_source=google&amp;utm_medium=pmax&amp;utm_campaign=aon_expansao_fundo_mar-aberto_exp_pmax_PR&amp;utm_term=&amp;utm_content=&amp;idcmp=s08%3Ac34%3Ae268dc16f02f467b9812d8162ba3ace9&amp;gad_source=1&amp;gad_campaignid=21824786551&amp;gbraid=0AAAAADhCf119NcTJ2x5EbshEYO1HmIp9L&amp;gclid=EAIaIQobChMIs97yxdO0jQMVPqNaBR2vcjJWEAAYASAAEgIsFPD_BwE&amp;autocomplete=bmw%20m3&amp;autocompleteTerm=Bmw%20M3&amp;tipoveiculo=carros&amp;marca1=BMW&amp;modelo1=M3&amp;page=1">
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'push button  Voltar'" sap:VirtualizedContainerService.HintSize="416,187" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="https://www.webmotors.com.br/carros/estoque/bmw/m3?lkid=1022&amp;utm_id=21820960772&amp;utm_source=google&amp;utm_medium=pmax&amp;utm_campaign=aon_expansao_fundo_mar-aberto_exp_pmax_PR&amp;utm_term=&amp;utm_content=&amp;idcmp=s08%3Ac34%3Ae268dc16f02f467b9812d8162ba3ace9&amp;gad_source=1&amp;gad_campaignid=21824786551&amp;gbraid=0AAAAADhCf119NcTJ2x5EbshEYO1HmIp9L&amp;gclid=EAIaIQobChMIs97yxdO0jQMVPqNaBR2vcjJWEAAYASAAEgIsFPD_BwE&amp;autocomplete=bmw%20m3&amp;autocompleteTerm=Bmw%20M3&amp;tipoveiculo=carros&amp;marca1=BMW&amp;modelo1=M3&amp;page=1">
                       <ui:TypeInto.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="34d35629-8b7f-4db4-bccd-a1a67b83d893" InformativeScreenshot="5c920e09458bd1b8bbcae60d33e5f856" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Nova guia - Google Chrome' /&gt;&lt;ctrl name='Nova guia - Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de endereço e de pesquisa' role='editable text' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -242,19 +244,37 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Bmw M3 Carros usados, seminovos e novo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="572,2776" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="79b88e06-bd5f-4642-886a-d9cf53715fd9" Version="V2">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="572,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Digite o nome da sua nova nave&quot; + environment.newline + &quot;Ex: bmw m3&quot;]" Title="Dados">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[buscaUserCar]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Assign sap:VirtualizedContainerService.HintSize="572,114" sap2010:WorkflowViewState.IdRef="Assign_26">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[buscaUserCar]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(buscaUserCar.ToString, " ", "/").Trim()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="572,324" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="[&quot;Digite o estado que deseja procurar&quot; + environment.newline + &quot;Ex: SP&quot;]" OptionsString="AC;AL;AP;AM;BA;CE;DF;ES;GO;MA;MT;MS;MG;PA;PB;PR;PE;PI;RJ;RN;RS;RO;RR;SC;SP;SE;TO" Title="Dados">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[escolhaEstado]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Bmw M3 Carros usados, seminovos e novo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="572,3833" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="79b88e06-bd5f-4642-886a-d9cf53715fd9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="538,2536" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence sap:VirtualizedContainerService.HintSize="538,3593" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="504,2474" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="504,3531" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="dtCarroFiltrado" />
                 <Variable x:TypeArguments="x:String" Name="strJsonBody" />
@@ -264,10 +284,18 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="470,114" sap2010:WorkflowViewState.IdRef="Assign_27">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[buscaUserCar]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(buscaUserCar.ToString, "/", " ").Trim()]</InArgument>
+                </Assign.Value>
+              </Assign>
               <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="470,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
-              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Dados'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='urlImagem'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='src'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,189" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="79b88e06-bd5f-4642-886a-d9cf53715fd9" Version="V4">
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Dados'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='urlImagem'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='linkAnuncio'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='src' name2='Column2' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,189" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="79b88e06-bd5f-4642-886a-d9cf53715fd9" Version="V4">
                 <uix:NExtractData.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.webmotors.com.br/carros/estoque/bmw/m3?lkid=1022&amp;utm_id=21820960772&amp;utm_source=google&amp;utm_medium=pmax&amp;utm_campaign=aon_expansao_fundo_mar-aberto_exp_pmax_PR&amp;utm_term=&amp;utm_content=&amp;idcmp=s08%3Ac34%3Ae268dc16f02f467b9812d8162ba3ace9&amp;gad_source=1&amp;gad_campaignid=21824786551&amp;gbraid=0AAAAADhCf119NcTJ2x5EbshEYO1HmIp9L&amp;gclid=EAIaIQobChMIs97yxdO0jQMVPqNaBR2vcjJWEAAYASAAEgIsFPD_BwE&amp;autocomplete=bmw%20m3&amp;autocompleteTerm=Bmw%20M3&amp;tipoveiculo=carros&amp;marca1=BMW&amp;modelo1=M3&amp;o=1&amp;page=1" ContentHash="KSkgcjmlI0WvfYCdubvmqA" DesignTimeRectangle="543, 329, 1020, 5920" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='MAIN' /&gt;" Guid="5d3b646e-7362-45ee-a7e4-a557cc2213b5" InformativeScreenshot="9eb0446e7ee4fc91bed0a7a30a445b07.png" Reference="FOw96i4iR0u0tJaKUAWT7Q/kEVidUyu7UyRCIN0HzEs_w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bmw M3: Carros usados, seminovos e novos' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="https://www.webmotors.com.br/carros/estoque/bmw/m3?lkid=1022&amp;utm_id=21820960772&amp;utm_source=google&amp;utm_medium=pmax&amp;utm_campaign=aon_expansao_fundo_mar-aberto_exp_pmax_PR&amp;utm_term=&amp;utm_content=&amp;idcmp=s08%3Ac34%3Ae268dc16f02f467b9812d8162ba3ace9&amp;gad_source=1&amp;gad_campaignid=21824786551&amp;gbraid=0AAAAADhCf119NcTJ2x5EbshEYO1HmIp9L&amp;gclid=EAIaIQobChMIs97yxdO0jQMVPqNaBR2vcjJWEAAYASAAEgIsFPD_BwE&amp;autocomplete=bmw%20m3&amp;autocompleteTerm=Bmw%20M3&amp;tipoveiculo=carros&amp;marca1=BMW&amp;modelo1=M3&amp;page=1" ContentHash="U16-Wo_EYECzZVJXUvNS3w" DesignTimeRectangle="543, -871, 1020, 5894" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='MAIN' /&gt;" Guid="2f0c1bbe-e4da-4c8b-a08d-4290cdcf25b7" InformativeScreenshot="9eb0446e7ee4fc91bed0a7a30a445b07.png" Reference="FOw96i4iR0u0tJaKUAWT7Q/kEVidUyu7UyRCIN0HzEs_w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bmw M3: Carros usados, seminovos e novos' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
                 </uix:NExtractData.Target>
               </uix:NExtractData>
               <Sequence DisplayName="Sequence - TratoLinhasVazias - removendo-as" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="Sequence_31">
@@ -277,7 +305,7 @@
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="454,682" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                   <ui:ForEachRow.Body>
                     <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
@@ -319,8 +347,14 @@
                       </Sequence>
                     </ActivityAction>
                   </ui:ForEachRow.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </ui:ForEachRow>
-                <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each currentDataRow" sap:VirtualizedContainerService.HintSize="454,392" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[linhaRemover]">
+                <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each currentDataRow" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[linhaRemover]">
                   <ui:ForEach.Body>
                     <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
@@ -336,6 +370,12 @@
                       </Sequence>
                     </ActivityAction>
                   </ui:ForEach.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </ui:ForEach>
               </Sequence>
               <Sequence sap2010:Annotation.AnnotationText="qntLinha recebe ExtractDataTable.Rows.Count" DisplayName="Sequence " sap:VirtualizedContainerService.HintSize="470,88" sap2010:WorkflowViewState.IdRef="Sequence_49">
@@ -366,8 +406,8 @@
                 <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Modelo" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_11" />
                 <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Ano" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" />
                 <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="KM" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_10" />
-                <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Local" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
-                <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Preço" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,214" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" />
+                <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Local" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
+                <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Preço" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" />
               </Sequence>
               <Assign sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="Assign_13">
                 <Assign.To>
@@ -443,19 +483,19 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InterruptibleWhile>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="O corpo do projeto, onde pego os dados e guardo dentro de um array &quot;valorSeparados&quot;, depois limpo tudo que tiver para tras da variavel que guarda o nome do carro, apos separado, guardo cada posição do array ema coluna da minha dataTable;" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="470,999" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,720" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="468,747" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap2010:Annotation.AnnotationText="Apos excluir linhas que eu não queria, separo cada dado em uma posição do array" sap:VirtualizedContainerService.HintSize="382,129" sap2010:WorkflowViewState.IdRef="Assign_10">
+                      <Assign sap2010:Annotation.AnnotationText="Apos excluir linhas que eu não queria, separo cada dado em uma posição do array" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="Assign_10">
                         <Assign.To>
                           <OutArgument x:TypeArguments="s:String[]">[valorSeparados]</OutArgument>
                         </Assign.To>
@@ -465,17 +505,17 @@
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
-                      <Assign sap2010:Annotation.AnnotationText="Aqui visualizei um problema onde os dados eram inconscientes, nem sempre bmw estava na posição zero, então pesquisei um comando que faça isso/ Array.FindIndex: procura elemento no array e retorna o indice/ Function(x) x.ToLower.StartsWith(&quot;bmw&quot;) : como se fosse um foreach para cada item dentro de valoresSeparados, Tolower: deixa minusculo e com StartsWith ve se começa com bmw;" sap:VirtualizedContainerService.HintSize="382,309" sap2010:WorkflowViewState.IdRef="Assign_17">
+                      <Assign sap2010:Annotation.AnnotationText="Aqui visualizei um problema onde os dados eram inconscientes, nem sempre bmw estava na posição zero, então pesquisei um comando que faça isso/ Array.FindIndex: procura elemento no array e retorna o indice/ Function(x) x.ToLower.StartsWith(&quot;bmw&quot;) : como se fosse um foreach para cada item dentro de valoresSeparados, Tolower: deixa minusculo e com StartsWith ve se começa com bmw;" sap:VirtualizedContainerService.HintSize="434,309" sap2010:WorkflowViewState.IdRef="Assign_17">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[indiceBMW]</OutArgument>
                         </Assign.To>
                         <Assign.Value>
-                          <InArgument x:TypeArguments="x:Int32">[Array.FindIndex(valorSeparados, Function(x) x.ToLower.StartsWith("bmw"))]</InArgument>
+                          <InArgument x:TypeArguments="x:Int32">[Array.FindIndex(valorSeparados, Function(x) x.ToLower.Contains(buscaUserCar.ToLower))]</InArgument>
                         </Assign.Value>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -485,7 +525,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
-                      <If sap2010:Annotation.AnnotationText="Se ele não encontrar bmw ele retorna -1 e não entra no if aqui, porem se entrar ele guarda todos os dados dentro de um novo array começando na posição do indice da bmw" Condition="[indiceBMW &gt;= 0]" sap:VirtualizedContainerService.HintSize="382,174" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If sap2010:Annotation.AnnotationText="Se ele não encontrar bmw ele retorna -1 e não entra no if aqui, porem se entrar ele guarda todos os dados dentro de um novo array começando na posição do indice da bmw" Condition="[indiceBMW &gt;= 0]" sap:VirtualizedContainerService.HintSize="434,174" sap2010:WorkflowViewState.IdRef="If_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -494,13 +534,13 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_51">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_18">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:String[]">[valoresLimpo]</OutArgument>
                               </Assign.To>
@@ -511,7 +551,7 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,90" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_52">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -520,7 +560,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[valorSeparados.Length &gt;= 7]" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If Condition="[valorSeparados.Length &gt;= 7]" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="If_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -528,13 +568,13 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,1017" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,735" sap2010:WorkflowViewState.IdRef="Sequence_19">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="486,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Nome")]</OutArgument>
                               </Assign.To>
@@ -542,7 +582,7 @@
                                 <InArgument x:TypeArguments="x:Object">[valoresLimpo(0).Trim()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="486,114" sap2010:WorkflowViewState.IdRef="Assign_19">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_19">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Modelo")]</OutArgument>
                               </Assign.To>
@@ -550,7 +590,7 @@
                                 <InArgument x:TypeArguments="x:Object">[valoresLimpo(1).Trim()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="486,114" sap2010:WorkflowViewState.IdRef="Assign_7">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_7">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Ano")]</OutArgument>
                               </Assign.To>
@@ -558,7 +598,7 @@
                                 <InArgument x:TypeArguments="x:Object">[valoresLimpo(2).Trim()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="486,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_8">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("KM")]</OutArgument>
                               </Assign.To>
@@ -566,7 +606,7 @@
                                 <InArgument x:TypeArguments="x:Object">[valoresLimpo(3).Trim()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="486,115" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Local")]</OutArgument>
                               </Assign.To>
@@ -574,7 +614,7 @@
                                 <InArgument x:TypeArguments="x:Object">[valoresLimpo(4).Trim()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="486,115" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Preço")]</OutArgument>
                               </Assign.To>
@@ -582,22 +622,10 @@
                                 <InArgument x:TypeArguments="x:Object">[valoresLimpo(5).Trim()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,271" sap2010:WorkflowViewState.IdRef="CommentOut_21">
-                              <ui:CommentOut.Body>
-                                <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_59">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="MessageBox_25" Text="[&quot;Nome: &quot; &amp; CurrentRow(&quot;Nome&quot;).ToString.Trim &amp; vbCrLf &amp;&#xA;&quot;Preço: &quot; &amp; CurrentRow(&quot;Preço&quot;).ToString.Trim &amp; vbCrLf &amp;&#xA;&quot;Local: &quot; &amp; CurrentRow(&quot;Local&quot;).ToString.Trim &amp; vbCrLf &amp;&#xA;&quot;Ano: &quot; &amp; CurrentRow(&quot;Ano&quot;).ToString.Trim &amp; vbCrLf &amp;&#xA;&quot;KM: &quot; &amp; CurrentRow(&quot;KM&quot;).ToString.Trim]" />
-                                </Sequence>
-                              </ui:CommentOut.Body>
-                            </ui:CommentOut>
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="520,90" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_20">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -611,8 +639,9 @@
                 </ui:ForEachRow.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
@@ -624,7 +653,7 @@
                         <InArgument x:TypeArguments="x:String">["Local"]</InArgument>
                       </ui:FilterOperationArgument.Column>
                       <ui:FilterOperationArgument.Operand>
-                        <InArgument x:TypeArguments="x:String">[" (GO)"]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[" ("+ escolhaEstado+ ")"]</InArgument>
                       </ui:FilterOperationArgument.Operand>
                     </ui:FilterOperationArgument>
                   </scg:List>
@@ -641,38 +670,41 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:FilterDataTable>
-              <Assign DisplayName="Assign - add titulo mensagem" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="Assign_21">
+              <Assign DisplayName="Assign - add titulo mensagem" sap:VirtualizedContainerService.HintSize="470,114" sap2010:WorkflowViewState.IdRef="Assign_21">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strMensagem]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">["Relatório de carros encontrados em São Paulo (SP):" + Environment.NewLine + Environment.NewLine]</InArgument>
+                  <InArgument x:TypeArguments="x:String">["Relatório de carros encontrados em " + escolhaEstado + Environment.NewLine + Environment.NewLine]</InArgument>
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="foreach onde monto o escopo do json e envio via http" DataTable="[dtCarroFiltrado]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="470,950" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="foreach onde monto o escopo do json e envio via http" DataTable="[dtCarroFiltrado]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="470,951" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="468,739" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="468,740" sap2010:WorkflowViewState.IdRef="Sequence_58">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_24">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_24">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strJsonBody]</OutArgument>
                         </Assign.To>
                         <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">["{""embeds"":[{""title"":" + Newtonsoft.Json.JsonConvert.SerializeObject(CurrentRow("Nome").ToString() + " - " + CurrentRow("Preço").ToString()) + ",""description"":" + Newtonsoft.Json.JsonConvert.SerializeObject("Modelo: " + CurrentRow("Modelo").ToString() + Environment.NewLine + "Ano: " + CurrentRow("Ano").ToString() + Environment.NewLine + "KM: " + CurrentRow("KM").ToString() + Environment.NewLine + "Local: " + CurrentRow("Local").ToString()) + ",""color"":3447003,""image"":{""url"":" + Newtonsoft.Json.JsonConvert.SerializeObject(CurrentRow("URLImagem").ToString()) + "}}]}"]</InArgument>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">["{""embeds"":[{""title"":" + Newtonsoft.Json.JsonConvert.SerializeObject(CurrentRow("Nome").ToString() + " - " + CurrentRow("Preço").ToString()) + 
+",""url"":" + Newtonsoft.Json.JsonConvert.SerializeObject(CurrentRow("linkAnuncio").ToString()) + 
+",""description"":" + Newtonsoft.Json.JsonConvert.SerializeObject("Modelo: " + CurrentRow("Modelo").ToString() + Environment.NewLine + "Ano: " + CurrentRow("Ano").ToString() + Environment.NewLine + "KM: " + CurrentRow("KM").ToString() + Environment.NewLine + "Local: " + CurrentRow("Local").ToString()) + 
+",""color"":3447003,""image"":{""url"":" + Newtonsoft.Json.JsonConvert.SerializeObject(CurrentRow("URLImagem").ToString()) + "}}]}"]</InArgument>
                         </Assign.Value>
                       </Assign>
                       <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[strJsonBody]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://discord.com/api/webhooks/1375160239149551796/DoVf-j01bqHQbuRTiG1FNEqemoMTdUniC-NQ3GeGjnva5pZzSxedMnYBi1hPmJvpuqoz" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="POST" ResponseHeaders="[cabecalhoRespDc]" Result="[respostaDc]" StatusCode="[statusSoliDiscord]" TimeoutMS="6000">
@@ -701,6 +733,8 @@
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
@@ -712,24 +746,6 @@
                   <InArgument x:TypeArguments="x:String">[strMensagem + "Total de carros listados: " + dtCarroFiltrado.Rows.Count.ToString() + Environment.NewLine]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="CommentOut_25">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_63">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Conteúdo FINAL da strMensagem ANTES do envio: &quot; + strMensagem]" />
-                  </Sequence>
-                </ui:CommentOut.Body>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:CommentOut>
               <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[Newtonsoft.Json.JsonConvert.SerializeObject(New With { .content = strMensagem })]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://discord.com/api/webhooks/1375160239149551796/DoVf-j01bqHQbuRTiG1FNEqemoMTdUniC-NQ3GeGjnva5pZzSxedMnYBi1hPmJvpuqoz" sap:VirtualizedContainerService.HintSize="470,95" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" ResponseHeaders="[cabecalhoRespDc]" Result="[respostaDc]" StatusCode="[statusSoliDiscord]" TimeoutMS="6000">
                 <ui:HttpClient.Attachments>
                   <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
@@ -752,7 +768,7 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="GqAuF8mGfkC8804Ef2AjVQ" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="241b82d20fee4227c88a9dba048922e2.jpg" Reference="FOw96i4iR0u0tJaKUAWT7Q/zxSnpi4zpEm6bR0eQgfyog" Selector="&lt;html app='chrome.exe' title='Bmw M3: Carros usados, seminovos e novos' /&gt;" Url="https://www.webmotors.com.br/carros/estoque/bmw/m3?lkid=1022&amp;utm_id=21820960772&amp;utm_source=google&amp;utm_medium=pmax&amp;utm_campaign=aon_expansao_fundo_mar-aberto_exp_pmax_PR&amp;utm_term=&amp;utm_content=&amp;idcmp=s08%3Ac34%3Ae268dc16f02f467b9812d8162ba3ace9&amp;gad_source=1&amp;gad_campaignid=21824786551&amp;gbraid=0AAAAADhCf119NcTJ2x5EbshEYO1HmIp9L&amp;gclid=EAIaIQobChMIs97yxdO0jQMVPqNaBR2vcjJWEAAYASAAEgIsFPD_BwE&amp;autocomplete=bmw%20m3&amp;autocompleteTerm=Bmw%20M3&amp;tipoveiculo=carros&amp;marca1=BMW&amp;modelo1=M3&amp;o=1&amp;page=1" Version="V2" />
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="mCPLC3zAfEuaaPzLytiYBg" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_2" InformativeScreenshot="241b82d20fee4227c88a9dba048922e2.jpg" Reference="FOw96i4iR0u0tJaKUAWT7Q/zxSnpi4zpEm6bR0eQgfyog" Selector="&lt;html app='chrome.exe' title='Bmw M3: Carros usados, seminovos e novos' /&gt;" Url="[&quot;https://www.webmotors.com.br/carros/estoque/&quot; + buscaUserCar]" Version="V2" />
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
